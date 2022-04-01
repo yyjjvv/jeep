@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEEP</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="css/all.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            //New Image Height
+            let newH = $(".new .pic li").height();
+            $(".new .img_area").height(newH);
+
+            //New Image Change
+            let newPic = $(".new .pic li");
+            let newColor = $(".new .color li");
+            newPic.eq(0).addClass("on");
+            newColor.eq(0).addClass("on");
+            newColor.click(function () {
+                newPic.removeClass("on");
+                newColor.removeClass("on");
+                $(this).addClass("on");
+                let or = $(this).index();
+                newPic.eq(or).addClass("on");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="in">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="JEEP">
+                    </a>
+                </h1>
+                <nav class="nav">
+                    <h2 class="hide">Main Navigation</h2>
+                    <ul class="gnb cl">
+                        <li>
+                            <a href="#">모델소개</a>
+                            <ul class="lnb">
+                                <li><a href="#">All-New Grand Cherokee L</a></li>
+                                <li><a href="#">Gladiator</a></li>
+                                <li><a href="#">Wrangler</a></li>
+                                <li><a href="#">Grand Cherokee</a></li>
+                                <li><a href="#">Cherokee</a></li>
+                                <li><a href="#">Renegade</a></li>
+                                <li><a href="#">Compass</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">구입문의</a></li>
+                        <li><a href="#">주행성능</a></li>
+                        <li><a href="#">JEEP LIFE</a></li>
+                        <li><a href="#">서비스</a></li>
+                    </ul>
+                </nav>
+                <div class="top_menu">
+                    <ul class="top_list cl">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-circle-notch"></i>시승신청
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt"></i>전시회/서비스 검색
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="visual">
+            <div class="slider">
+                <ul class="pic">
+                    <li>
+                        <div class="in">
+                            <div class="visual_txt">
+                                <i>2022 NEW</i>
+                                <h2>WRANGLER</h2>
+                                <p>FREEDOM TO CONQUER</p>
+                                <div class="btn_link">
+                                    <a href="#">보러가기</a><i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="in">
+                            <div class="visual_txt">
+                                <i class="clr">2022 NEW</i>
+                                <h2>WRANGLER</h2>
+                                <p>FREEDOM TO CONQUER</p>
+                                <div class="btn_link">
+                                    <a href="#">보러가기</a><i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="pagenation cl">
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <main id="contents">
+            <section class="section product">
+                <div class="in">
+                    <ul class="pro_area cl">
+                        <li class="wrangler">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/cont_01.jpg" alt="Rubicon">
+                                </div>
+                                <div class="mask">
+                                    <p>WRANGLER</p>
+                                    <h3>RUBICON</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="wrangler">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/cont_02.jpg" alt="Sahara">
+                                </div>
+                                <div class="mask">
+                                    <p>WRANGLER</p>
+                                    <h3>SAHARA</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="wrangler">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/cont_03.jpg" alt="Cherokee">
+                                </div>
+                                <div class="mask">
+                                    <p>WRANGLER</p>
+                                    <h3>Cherokee</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section new">
+                <div class="in">
+                    <h2>ALL-NEW GRAND CHEROKEE L</h2>
+                    <h3>A Legacy Extended</h3>
+                    <div class="pic">
+                        <ul class="img_area">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/cont2_01.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/cont2_02.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/cont2_03.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/cont2_04.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/cont2_05.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="color">
+                        <p>Color</p>
+                        <ul class="color_area">
+                            <li>
+                                <span class="palette"></span>
+                                <p class="color_name">Baltic Gray Metallic Clear-Coat Exterior Paint</p>
+                            </li>
+                            <li>
+                                <span class="palette"></span>
+                                <p class="color_name">Velvet Red Pearl-Coat Exterior Paint</p>
+                            </li>
+                            <li>
+                                <span class="palette"></span>
+                                <p class="color_name">Silver Zynith Exterior Paint</p>
+                            </li>
+                            <li>
+                                <span class="palette"></span>
+                                <p class="color_name">Bright White Clear-Coat Exterior Paint</p>
+                            </li>
+                            <li>
+                                <span class="palette"></span>
+                                <p class="color_name">Diamond Black Crystal Pearl-Coat Exterior Paint</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section vehicle">
+                <div class="in">
+                    <h2>JEEP VEHICLES</h2>
+                    <ul class="veh_list cl">
+                        <li>
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/cont3_01.jpg" alt="Exterior">
+                                </div>
+                                <div class="mask">
+                                    <div class="txt">
+                                        <h3>Exterior</h3>
+                                        <p>5 Photos</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/cont3_02.jpg" alt="Interior">
+                                </div>
+                                <div class="mask">
+                                    <div class="txt">
+                                        <h3>Interior</h3>
+                                        <p>7 Photos</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/cont3_03.jpg" alt="Video">
+                                </div>
+                                <div class="mask">
+                                    <div class="txt">
+                                        <h3>Video</h3>
+                                        <p>5 Clips</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/cont3_04.jpg" alt="Overview">
+                                </div>
+                                <div class="mask">
+                                    <div class="txt">
+                                        <h3>Overview</h3>
+                                        <p>2021 New</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="ftr_top">
+                <div class="in">
+                    <ul class="ftr_menu cl">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                        <li><a href="#">PRIVACY</a></li>
+                    </ul>
+                    <div class="ftr_search">
+                        <form action="#">
+                            <fieldset>
+                                <legend class="hide">검색</legend>
+                                <div class="srch_txt">
+                                    <label for="search" class="hide">Search</label>
+                                    <input type="text" placeholder="Enter Search Terms" id="search">
+                                </div>
+                                <button class="btn_srch">
+                                    <span class="hide">검색버튼</span>
+                                    <span class="icon_srch">Search</span>
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--ftr_top END-->
+            <div class="ftr_bottom">
+                <div class="in">
+                    <div class="ftr_logo"><img src="images/logo2.png" alt="STELLANTIS"></div>
+                    <p class="cpr">&copy;2021 Stellantis. All Rights Reserved.</p>
+                    <p class="txt">Chrysler, Jeep 및 FIAT 로고는 Stellantis의 등록 상표입니다.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
